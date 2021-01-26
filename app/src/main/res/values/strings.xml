@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Imaginato</string>
+
+    <string name="txt_error_network">Lỗi mạng</string>
+    <string name="txt_network">Bạn vui lòng bật wifi hoặc dữ liệu di động để sử dụng app!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="error_api">Có lỗi xảy ra vui lòng thử lại sau!</string>
+    <string name="empty_username">Không được để trống Username</string>
+    <string name="empty_password">Không được để trống Password</string>
+    <string name="max_length_30">Nhập tối đa 30 ký tự</string>
 </resources>
