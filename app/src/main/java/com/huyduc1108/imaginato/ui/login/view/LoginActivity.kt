@@ -76,7 +76,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>() {
         }
         if (password.length > 16) {
             binding?.tlUsername?.error = null
-            binding?.tlPassword?.error = getString(R.string.max_length_30)
+            binding?.tlPassword?.error = getString(R.string.max_length_16)
             return false
         }
         binding?.tlPassword?.error = null
