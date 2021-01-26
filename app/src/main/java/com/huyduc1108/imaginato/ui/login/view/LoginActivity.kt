@@ -52,7 +52,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>() {
                         }
                         Result.Status.ERROR -> {
                             hiddenDialogLoading()
-                            Toast.makeText(baseContext, getString(R.string.error_api), Toast.LENGTH_SHORT).show()
+                            Toast.makeText(baseContext, it.message, Toast.LENGTH_SHORT).show()
                         }
                     }
                 })
