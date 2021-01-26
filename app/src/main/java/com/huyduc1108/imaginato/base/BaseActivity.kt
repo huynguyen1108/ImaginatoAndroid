@@ -1,10 +1,6 @@
 package com.huyduc1108.imaginato.base
 
 import android.content.BroadcastReceiver
-import android.content.Context
-import android.content.Intent
-import android.content.IntentFilter
-import android.net.ConnectivityManager
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -52,36 +48,6 @@ abstract class BaseActivity<T : ViewDataBinding?, V : ViewModel?> :
     protected abstract fun init()
 
     override fun androidInjector(): AndroidInjector<Any> = dispatchingAndroidInjector
-
-//    override fun onResume() {
-//        super.onResume()
-
-//        createBroadcastReceiverNetwork()
-//    }
-
-//    private fun createBroadcastReceiverNetwork() {
-//        val intentFilter = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
-//        mReceiver = object : BroadcastReceiver() {
-//            override fun onReceive(context: Context?, intent: Intent) {
-//                val cm =
-//                    context!!.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-//                val networkInfo = cm.activeNetworkInfo
-//                if (!(networkInfo != null && networkInfo.isConnected)) {
-//                    showDialogNetwork()
-//                } else {
-//                    hiddenDialogNetwork()
-//                }
-//            }
-//        }
-//        registerReceiver(mReceiver, intentFilter)
-//    }
-
-//    override fun onPause() {
-//        super.onPause()
-//        if (mReceiver != null) {
-//            unregisterReceiver(mReceiver)
-//        }
-//    }
 
     fun showDialogNetwork() {
         if (networkDialog == null) {

@@ -97,11 +97,6 @@ object ActivityUtils {
             fragmentManager
         )
         fragmentManager?.popBackStack()
-//        if (fragmentManager.backStackEntryCount > 0) {
-//            val fragmentTag =
-//                fragmentManager.getBackStackEntryAt(fragmentManager.backStackEntryCount - 1)
-//                    .name
-//        }
     }
 
     fun popAllFragment(fragmentManager: FragmentManager) {
