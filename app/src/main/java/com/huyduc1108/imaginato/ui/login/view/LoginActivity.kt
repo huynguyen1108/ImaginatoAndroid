@@ -21,7 +21,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginViewModel>() {
 
     override fun init() {
         initListener()
-        checkUserLocal()
+//        checkUserLocal()
     }
 
     private fun loginSuccess(userResponse: UserResponse?) {
